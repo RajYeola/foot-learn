@@ -1,0 +1,261 @@
+.flex-row {
+  display: flex;
+}
+
+.channel-thumbnail {
+  border-radius: 50%;
+}
+
+/* video listing */
+
+.video-card .video-thumbnail {
+  object-fit: cover;
+}
+
+.video-card .channel-thumbnail {
+  width: 36px;
+  height: 36px;
+}
+
+.video-card .video-name {
+  font-size: 0.875rem;
+  color: var(--black-1);
+}
+
+.video-card .channel-name,
+.video-card .video-views,
+.video-card .dot {
+  color: var(--dark-grey-1);
+}
+
+.genre-btn {
+  font-size: 0.875rem;
+  border: 1px solid var(--light-grey-3);
+  background-color: var(--light-grey-2);
+  padding: 0.5em 0.75em;
+  border-radius: 1rem;
+}
+
+.selected {
+  background-color: var(--black-1);
+  color: var(--white);
+  border: none;
+}
+
+/* video details */
+
+.action-icon {
+  font-size: 1.5rem;
+}
+
+.width-70 {
+  max-width: 70%;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid var(--light-grey-3);
+}
+
+.border-top-grey {
+  border-top: 1px solid var(--light-grey-3);
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.playlist-container {
+  background-color: var(--light-grey-1);
+  border: 1px solid var(--light-grey-3);
+  border-radius: 0.5em;
+  position: absolute;
+  width: 175px;
+}
+
+.btn-playlist {
+  color: var(--black-1);
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* video listing */
+
+  .video-card .video-thumbnail {
+    width: 100%;
+  }
+  .video-card .video-name {
+    font-weight: 600;
+    margin-top: 0.15em;
+  }
+  .video-card .channel-name,
+  .video-card .video-views,
+  .video-card .dot {
+    font-size: 0.75rem;
+  }
+
+  .genre-btn {
+    line-height: 1.125em;
+  }
+
+  .genre-mobile-container {
+    white-space: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .genre-mobile-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* video details */
+  .video-mobile-container .video-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .video-mobile-container .video-views {
+    font-size: 0.875rem;
+    color: var(--dark-grey-1);
+  }
+
+  .video-mobile-container .channel-thumbnail {
+    width: 36px;
+    height: 36px;
+  }
+
+  .video-mobile-container .channel-name {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  .video-mobile-container .channel-subscribers {
+    font-size: 0.75rem;
+    color: var(--dark-grey-1);
+    font-weight: 600;
+    padding-top: 0.25em;
+  }
+
+  .video-mobile-container .action-icon {
+    margin-bottom: 0.1em;
+  }
+
+  .width-75 {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .playlist-container {
+    top: 2em;
+    right: 2.5em;
+  }
+
+  .btn-playlist {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* video listing */
+
+  .video-listing-container {
+    width: 85%;
+  }
+  .video-card {
+    width: 250px;
+  }
+  .video-card .video-thumbnail {
+    width: 250px;
+    height: 140px;
+  }
+  .video-card .video-name {
+    font-weight: bold;
+    max-width: 215px;
+    margin-top: 0.25em;
+  }
+  .video-card .channel-name,
+  .video-card .video-views {
+    font-size: 0.875rem;
+  }
+
+  .genre-btn {
+    line-height: 1.25em;
+  }
+
+  /* video details */
+
+  .video-container {
+    width: 85%;
+    padding: 2em;
+  }
+
+  .video-container .channel-thumbnail {
+    width: 48px;
+    height: 48px;
+  }
+
+  .video-container .video-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .video-container .video-views {
+    font-size: 0.875rem;
+    color: var(--dark-grey-1);
+  }
+
+  .video-container .channel-name {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  .video-container .channel-subscribers {
+    font-size: 0.75rem;
+    color: var(--dark-grey-1);
+    font-weight: 600;
+  }
+
+  .video-container .video-description {
+    font-size: 0.9375rem;
+    max-width: 70%;
+    font-weight: 600;
+    line-height: 1.125rem;
+  }
+
+  .playlist-container {
+    top: 1em;
+    right: 2.5em;
+  }
+
+  .btn-playlist {
+    font-size: 0.9375rem;
+  }
+
+  .btn-playlist:hover {
+    color: var(--secondary);
+  }
+
+  .input-basic {
+    padding-left: 0.25em;
+    font-size: 0.875rem;
+    border-radius: 0.25em;
+    border-top: 1px solid var(--light-grey-2);
+    border-right: 1px solid var(--light-grey-2);
+    border-left: 1px solid var(--light-grey-2);
+  }
+
+  .input-basic::placeholder {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .video-container {
+    width: 82%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .video-container {
+    width: 78%;
+  }
+}

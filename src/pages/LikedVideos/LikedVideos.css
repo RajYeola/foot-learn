@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .liked-videos-video-container {
+    border-top: 1px solid var(--light-grey-3);
+    border-bottom: 1px solid var(--light-grey-3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .liked-videos-details-container {
+    width: 50%;
+    margin: 0 auto;
+    height: fit-content;
+  }
+
+  .liked-videos-video-container {
+    max-width: 683px;
+    display: grid;
+    grid-template-columns: 620px 55px;
+    border: 1px solid var(--light-grey-3);
+  }
+
+  .liked-videos-video-container .video-views {
+    font-size: 0.75rem;
+    color: var(--dark-grey-1);
+  }
+
+  .liked-videos-video-container .channel-name {
+    color: var(--dark-grey-1);
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+}

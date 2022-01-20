@@ -1,0 +1,39 @@
+.sidebar-container {
+  display: block;
+  width: 15%;
+  height: fit-content;
+  border-right: 1px solid var(--light-grey-3);
+  border-bottom: 1px solid var(--light-grey-3);
+  padding: 0 1em;
+}
+
+.page-container {
+  color: var(--black-1);
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--light-grey-2);
+}
+
+.sidebar-container .page-icon {
+  font-size: 1.5rem;
+}
+
+.sidebar-container .page-name {
+  font-size: 1.1rem;
+}
+
+.active-page {
+  color: var(--secondary) !important;
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 1125px) {
+  .sidebar-container {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .sidebar-container {
+    width: 22%;
+  }
+}

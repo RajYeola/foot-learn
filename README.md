@@ -1,2 +1,2 @@
-# foot-learn
+# footlearn
  
