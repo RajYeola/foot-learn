@@ -10,16 +10,32 @@ export const dataReducer = (state, action) => {
 
   switch (action.type) {
     case "INITIALIZE_WATCH_LATER":
-      return { ...state, watchLater: action.payload };
+      if (action.payload) {
+        return { ...state, watchLater: action.payload };
+      } else {
+        return { ...state, watchLater: [] };
+      }
 
     case "INITIALIZE_LIKED_VIDEOS":
-      return { ...state, likedVideos: action.payload };
+      if (action.payload) {
+        return { ...state, likedVideos: action.payload };
+      } else {
+        return { ...state, likedVideos: [] };
+      }
 
     case "INITIALIZE_HISTORY":
-      return { ...state, history: action.payload };
+      if (action.payload) {
+        return { ...state, history: action.payload };
+      } else {
+        return { ...state, history: [] };
+      }
 
     case "INITIALIZE_PLAYLISTS":
-      return { ...state, playlists: action.payload };
+      if (action.payload) {
+        return { ...state, playlists: action.payload };
+      } else {
+        return { ...state, playlists: [] };
+      }
 
     case "LIKE_VIDEO":
       const isAlreadyInLikedVideos = likedVideos.some(
