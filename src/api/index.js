@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://footlearn-api.herokuapp.com/";
+const url = "https://footlearn-api.herokuapp.com";
 
 export const signUp = (userInfo) => axios.post(`${url}/user/signup`, userInfo);
 export const signIn = (userInfo) => axios.post(`${url}/user/signin`, userInfo);
