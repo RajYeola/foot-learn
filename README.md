@@ -1,16 +1,19 @@
 # foot-learn
+
 A video library app which will help you learn the fundamentals of football ⚽
 
-## Tech Stack 
+## Tech Stack
+
 - React
 - useReducer + Context API
 - Styling using personal CSS Component Library [RapidUI](https://github.com/RajYeola/Rapid-UI)
 - React Router v6(beta) for routing
-- Backend deployed on heroku [footlearn-backend](https://github.com/RajYeola/Footlearn-backend)
+- Backend deployed on vercel [footlearn-backend](https://github.com/RajYeola/Footlearn-backend)
 
 ## Functionalities
 
 ### 1) Video listing and details
+
 - Video listing
   - List of videos
   - Filter by video category
@@ -26,16 +29,18 @@ A video library app which will help you learn the fundamentals of football ⚽
     - Add video to a playlist
     - Remove video from a playlist
 
-
 ### 2) Liked Videos
+
 - List of all liked videos
 - Remove video from liked videos
 
 ### 3) Watch Later Videos
+
 - List of all watch later videos
 - Remove video from watch later videos
 
 ### 4) Playlists
+
 - List of all playlists
 - Playlist
   - Edit playlist name
@@ -43,11 +48,13 @@ A video library app which will help you learn the fundamentals of football ⚽
   - Delete playlist
 
 ### 5) History
+
 - List of videos you have watched
 - Remove video from the playlist
 - Clear history
 
 ### 6) Authentication
+
 - Authentication using JWT token
 - User signup
   - Signup validation
